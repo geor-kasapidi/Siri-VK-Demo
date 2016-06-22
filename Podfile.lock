@@ -1,0 +1,15 @@
+PODS:
+  - SSKeychain (1.4.0)
+  - VK-ios-sdk (1.3.17)
+
+DEPENDENCIES:
+  - SSKeychain
+  - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
+  VK-ios-sdk: 671b7bc84596da7040544eb848b3c71787906fbd
+
+PODFILE CHECKSUM: 5ffb1cb34bb2e8c5bd0c4e6669f62f81f5c7bf53
+
+COCOAPODS: 1.0.0

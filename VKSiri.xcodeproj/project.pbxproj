@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25554E7D2C308C59F2B7A08D /* libPods-VKSiriHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D7512573C5964D44BF8D2B /* libPods-VKSiriHelper.a */; };
+		8E0C13DC56E3FE6FFF210480 /* libPods-VKSiri.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DF972911402175A1D89759 /* libPods-VKSiri.a */; };
+		8F052FBD1D19856000209F8F /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F99DA911D17CDEC00909E0A /* IntentsUI.framework */; };
+		8F052FC41D19856000209F8F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F052FC21D19856000209F8F /* MainInterface.storyboard */; };
+		8F052FC81D19856000209F8F /* VKSiriIntentsUIExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8F052FBC1D19856000209F8F /* VKSiriIntentsUIExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F052FCE1D19859600209F8F /* N7MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F052FCD1D19859600209F8F /* N7MessageViewController.m */; };
+		8F052FD11D1985B600209F8F /* N7IntentHandlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F052FD01D1985B600209F8F /* N7IntentHandlingViewController.m */; };
+		8F0AA3481D17D0C300CF9E38 /* VKSiriHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0AA3471D17D0C300CF9E38 /* VKSiriHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F0AA34C1D17D0C300CF9E38 /* VKSiriHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0AA3451D17D0C300CF9E38 /* VKSiriHelper.framework */; };
+		8F0AA34D1D17D0C300CF9E38 /* VKSiriHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0AA3451D17D0C300CF9E38 /* VKSiriHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F42F0E21D19F2CB003B8A30 /* N7DataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F42F0DA1D19F2CB003B8A30 /* N7DataStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F42F0E31D19F2CB003B8A30 /* N7DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F42F0DB1D19F2CB003B8A30 /* N7DataStore.m */; };
+		8F42F0E41D19F2CB003B8A30 /* N7IntentsHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F42F0DC1D19F2CB003B8A30 /* N7IntentsHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F42F0E51D19F2CB003B8A30 /* N7IntentsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F42F0DD1D19F2CB003B8A30 /* N7IntentsHelper.m */; };
+		8F42F0E61D19F2CB003B8A30 /* N7UserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F42F0DE1D19F2CB003B8A30 /* N7UserModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F42F0E71D19F2CB003B8A30 /* N7UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F42F0DF1D19F2CB003B8A30 /* N7UserModel.m */; };
+		8F42F0E81D19F2CB003B8A30 /* N7VKManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F42F0E01D19F2CB003B8A30 /* N7VKManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F42F0E91D19F2CB003B8A30 /* N7VKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F42F0E11D19F2CB003B8A30 /* N7VKManager.m */; };
+		8F42F0EF1D1A63A9003B8A30 /* vk_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F42F0EE1D1A63A9003B8A30 /* vk_logo.png */; };
+		8F4CD32A1D1ADA190029473B /* VKSiriHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0AA3451D17D0C300CF9E38 /* VKSiriHelper.framework */; };
+		8F83147A1D17FA3C00129E82 /* N7VKSendMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8314791D17FA3C00129E82 /* N7VKSendMessageHandler.m */; };
+		8F83147D1D17FE1C00129E82 /* N7IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F83147C1D17FE1C00129E82 /* N7IntentHandler.m */; };
+		8F99DA6C1D17CDBE00909E0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F99DA6B1D17CDBE00909E0A /* main.m */; };
+		8F99DA6F1D17CDBE00909E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F99DA6E1D17CDBE00909E0A /* AppDelegate.m */; };
+		8F99DA721D17CDBE00909E0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F99DA711D17CDBE00909E0A /* ViewController.m */; };
+		8F99DA751D17CDBE00909E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F99DA731D17CDBE00909E0A /* Main.storyboard */; };
+		8F99DA771D17CDBE00909E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F99DA761D17CDBE00909E0A /* Assets.xcassets */; };
+		8F99DA7A1D17CDBE00909E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F99DA781D17CDBE00909E0A /* LaunchScreen.storyboard */; };
+		8F99DAA01D17CDEC00909E0A /* VKSiriIntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8F99DA851D17CDEC00909E0A /* VKSiriIntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AB3D248E01140F6C8449C8C6 /* libPods-VKSiriIntentsExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBDE0B9A94812864275D54F /* libPods-VKSiriIntentsExtension.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F052FC61D19856000209F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F99DA5F1D17CDBE00909E0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F052FBB1D19856000209F8F;
+			remoteInfo = VKSiriIntentsUIExtension;
+		};
+		8F0AA34A1D17D0C300CF9E38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F99DA5F1D17CDBE00909E0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F0AA3441D17D0C300CF9E38;
+			remoteInfo = VKSiriHelper;
+		};
+		8F99DA9E1D17CDEC00909E0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F99DA5F1D17CDBE00909E0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F99DA841D17CDEC00909E0A;
+			remoteInfo = VKSiriIntentsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F0AA3511D17D0C300CF9E38 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F0AA34D1D17D0C300CF9E38 /* VKSiriHelper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F99DAA71D17CDEC00909E0A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8F052FC81D19856000209F8F /* VKSiriIntentsUIExtension.appex in Embed App Extensions */,
+				8F99DAA01D17CDEC00909E0A /* VKSiriIntentsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42997A43F2B8D1D72DFE8B1C /* Pods-VKSiriIntentsExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKSiriIntentsExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKSiriIntentsExtension/Pods-VKSiriIntentsExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		44D7512573C5964D44BF8D2B /* libPods-VKSiriHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKSiriHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F6CC0B9017280AAC4749154 /* Pods-VKSiriIntentsExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKSiriIntentsExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKSiriIntentsExtension/Pods-VKSiriIntentsExtension.release.xcconfig"; sourceTree = "<group>"; };
+		5B40A239F904B835C7E4F79F /* Pods-VKSiri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKSiri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKSiri/Pods-VKSiri.debug.xcconfig"; sourceTree = "<group>"; };
+		8E77C0AC852504710463E018 /* Pods-VKSiriHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKSiriHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKSiriHelper/Pods-VKSiriHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		8F052FBC1D19856000209F8F /* VKSiriIntentsUIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VKSiriIntentsUIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F052FC31D19856000209F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8F052FC51D19856000209F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F052FCC1D19859600209F8F /* N7MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N7MessageViewController.h; sourceTree = "<group>"; };
+		8F052FCD1D19859600209F8F /* N7MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N7MessageViewController.m; sourceTree = "<group>"; };
+		8F052FCF1D1985B600209F8F /* N7IntentHandlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N7IntentHandlingViewController.h; sourceTree = "<group>"; };
+		8F052FD01D1985B600209F8F /* N7IntentHandlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N7IntentHandlingViewController.m; sourceTree = "<group>"; };
+		8F0AA3451D17D0C300CF9E38 /* VKSiriHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VKSiriHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0AA3471D17D0C300CF9E38 /* VKSiriHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKSiriHelper.h; sourceTree = "<group>"; };
+		8F0AA3491D17D0C300CF9E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F42F0DA1D19F2CB003B8A30 /* N7DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N7DataStore.h; sourceTree = "<group>"; };
+		8F42F0DB1D19F2CB003B8A30 /* N7DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N7DataStore.m; sourceTree = "<group>"; };
+		8F42F0DC1D19F2CB003B8A30 /* N7IntentsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N7IntentsHelper.h; sourceTree = "<group>"; };
+		8F42F0DD1D19F2CB003B8A30 /* N7IntentsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N7IntentsHelper.m; sourceTree = "<group>"; };
+		8F42F0DE1D19F2CB003B8A30 /* N7UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N7UserModel.h; sourceTree = "<group>"; };
+		8F42F0DF1D19F2CB003B8A30 /* N7UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N7UserModel.m; sourceTree = "<group>"; };
+		8F42F0E01D19F2CB003B8A30 /* N7VKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N7VKManager.h; sourceTree = "<group>"; };
+		8F42F0E11D19F2CB003B8A30 /* N7VKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N7VKManager.m; sourceTree = "<group>"; };
+		8F42F0EE1D1A63A9003B8A30 /* vk_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vk_logo.png; sourceTree = "<group>"; };
+		8F8314781D17FA3C00129E82 /* N7VKSendMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N7VKSendMessageHandler.h; sourceTree = "<group>"; };
+		8F8314791D17FA3C00129E82 /* N7VKSendMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N7VKSendMessageHandler.m; sourceTree = "<group>"; };
+		8F83147B1D17FE1C00129E82 /* N7IntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = N7IntentHandler.h; sourceTree = "<group>"; };
+		8F83147C1D17FE1C00129E82 /* N7IntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = N7IntentHandler.m; sourceTree = "<group>"; };
+		8F99DA671D17CDBE00909E0A /* VKSiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKSiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F99DA6B1D17CDBE00909E0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F99DA6D1D17CDBE00909E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F99DA6E1D17CDBE00909E0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F99DA701D17CDBE00909E0A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F99DA711D17CDBE00909E0A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F99DA741D17CDBE00909E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F99DA761D17CDBE00909E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F99DA791D17CDBE00909E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F99DA7B1D17CDBE00909E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F99DA851D17CDEC00909E0A /* VKSiriIntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VKSiriIntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F99DA8A1D17CDEC00909E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F99DA911D17CDEC00909E0A /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		943ADCD41257F1E5132E0724 /* Pods-VKSiriHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKSiriHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKSiriHelper/Pods-VKSiriHelper.release.xcconfig"; sourceTree = "<group>"; };
+		A9DF972911402175A1D89759 /* libPods-VKSiri.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKSiri.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1AC4FFAAFFE469386E5242B /* Pods-VKSiriIntentsExtensionUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKSiriIntentsExtensionUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKSiriIntentsExtensionUI/Pods-VKSiriIntentsExtensionUI.debug.xcconfig"; sourceTree = "<group>"; };
+		BBBDE0B9A94812864275D54F /* libPods-VKSiriIntentsExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKSiriIntentsExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C4F0F29DC5B2B9A5702D95 /* Pods-VKSiri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKSiri.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKSiri/Pods-VKSiri.release.xcconfig"; sourceTree = "<group>"; };
+		D3D37F85186ACB3D07DE2BDA /* libPods-VKSiriIntentsExtensionUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKSiriIntentsExtensionUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA98252350A5357D15FCC8A6 /* Pods-VKSiriIntentsExtensionUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKSiriIntentsExtensionUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKSiriIntentsExtensionUI/Pods-VKSiriIntentsExtensionUI.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F052FB91D19856000209F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F052FBD1D19856000209F8F /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0AA3411D17D0C300CF9E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25554E7D2C308C59F2B7A08D /* libPods-VKSiriHelper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F99DA641D17CDBE00909E0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0AA34C1D17D0C300CF9E38 /* VKSiriHelper.framework in Frameworks */,
+				8E0C13DC56E3FE6FFF210480 /* libPods-VKSiri.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F99DA821D17CDEC00909E0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4CD32A1D1ADA190029473B /* VKSiriHelper.framework in Frameworks */,
+				AB3D248E01140F6C8449C8C6 /* libPods-VKSiriIntentsExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E611B9F96963197CECCF0CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B40A239F904B835C7E4F79F /* Pods-VKSiri.debug.xcconfig */,
+				C4C4F0F29DC5B2B9A5702D95 /* Pods-VKSiri.release.xcconfig */,
+				42997A43F2B8D1D72DFE8B1C /* Pods-VKSiriIntentsExtension.debug.xcconfig */,
+				4F6CC0B9017280AAC4749154 /* Pods-VKSiriIntentsExtension.release.xcconfig */,
+				B1AC4FFAAFFE469386E5242B /* Pods-VKSiriIntentsExtensionUI.debug.xcconfig */,
+				DA98252350A5357D15FCC8A6 /* Pods-VKSiriIntentsExtensionUI.release.xcconfig */,
+				8E77C0AC852504710463E018 /* Pods-VKSiriHelper.debug.xcconfig */,
+				943ADCD41257F1E5132E0724 /* Pods-VKSiriHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F052FBE1D19856000209F8F /* VKSiriIntentsUIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8F42F0EE1D1A63A9003B8A30 /* vk_logo.png */,
+				8F052FC21D19856000209F8F /* MainInterface.storyboard */,
+				8F052FC51D19856000209F8F /* Info.plist */,
+				8F052FCC1D19859600209F8F /* N7MessageViewController.h */,
+				8F052FCD1D19859600209F8F /* N7MessageViewController.m */,
+				8F052FCF1D1985B600209F8F /* N7IntentHandlingViewController.h */,
+				8F052FD01D1985B600209F8F /* N7IntentHandlingViewController.m */,
+			);
+			path = VKSiriIntentsUIExtension;
+			sourceTree = "<group>";
+		};
+		8F0AA3461D17D0C300CF9E38 /* VKSiriHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8F2643701D17D9EA007D9DF2 /* Utils */,
+				8F0AA3561D17D24D00CF9E38 /* Models */,
+				8F0AA3471D17D0C300CF9E38 /* VKSiriHelper.h */,
+				8F0AA3491D17D0C300CF9E38 /* Info.plist */,
+			);
+			path = VKSiriHelper;
+			sourceTree = "<group>";
+		};
+		8F0AA3561D17D24D00CF9E38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F42F0DE1D19F2CB003B8A30 /* N7UserModel.h */,
+				8F42F0DF1D19F2CB003B8A30 /* N7UserModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8F2643701D17D9EA007D9DF2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8F42F0DA1D19F2CB003B8A30 /* N7DataStore.h */,
+				8F42F0DB1D19F2CB003B8A30 /* N7DataStore.m */,
+				8F42F0DC1D19F2CB003B8A30 /* N7IntentsHelper.h */,
+				8F42F0DD1D19F2CB003B8A30 /* N7IntentsHelper.m */,
+				8F42F0E01D19F2CB003B8A30 /* N7VKManager.h */,
+				8F42F0E11D19F2CB003B8A30 /* N7VKManager.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		8F99DA5E1D17CDBE00909E0A = {
+			isa = PBXGroup;
+			children = (
+				8F99DA691D17CDBE00909E0A /* VKSiri */,
+				8F0AA3461D17D0C300CF9E38 /* VKSiriHelper */,
+				8F99DA861D17CDEC00909E0A /* VKSiriIntentsExtension */,
+				8F052FBE1D19856000209F8F /* VKSiriIntentsUIExtension */,
+				8F99DA901D17CDEC00909E0A /* Frameworks */,
+				8F99DA681D17CDBE00909E0A /* Products */,
+				8E611B9F96963197CECCF0CC /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8F99DA681D17CDBE00909E0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F99DA671D17CDBE00909E0A /* VKSiri.app */,
+				8F99DA851D17CDEC00909E0A /* VKSiriIntentsExtension.appex */,
+				8F0AA3451D17D0C300CF9E38 /* VKSiriHelper.framework */,
+				8F052FBC1D19856000209F8F /* VKSiriIntentsUIExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F99DA691D17CDBE00909E0A /* VKSiri */ = {
+			isa = PBXGroup;
+			children = (
+				8F99DA6D1D17CDBE00909E0A /* AppDelegate.h */,
+				8F99DA6E1D17CDBE00909E0A /* AppDelegate.m */,
+				8F99DA701D17CDBE00909E0A /* ViewController.h */,
+				8F99DA711D17CDBE00909E0A /* ViewController.m */,
+				8F99DA731D17CDBE00909E0A /* Main.storyboard */,
+				8F99DA761D17CDBE00909E0A /* Assets.xcassets */,
+				8F99DA781D17CDBE00909E0A /* LaunchScreen.storyboard */,
+				8F99DA7B1D17CDBE00909E0A /* Info.plist */,
+				8F99DA6A1D17CDBE00909E0A /* Supporting Files */,
+			);
+			path = VKSiri;
+			sourceTree = "<group>";
+		};
+		8F99DA6A1D17CDBE00909E0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F99DA6B1D17CDBE00909E0A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F99DA861D17CDEC00909E0A /* VKSiriIntentsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8F99DA8A1D17CDEC00909E0A /* Info.plist */,
+				8F8314781D17FA3C00129E82 /* N7VKSendMessageHandler.h */,
+				8F8314791D17FA3C00129E82 /* N7VKSendMessageHandler.m */,
+				8F83147B1D17FE1C00129E82 /* N7IntentHandler.h */,
+				8F83147C1D17FE1C00129E82 /* N7IntentHandler.m */,
+			);
+			path = VKSiriIntentsExtension;
+			sourceTree = "<group>";
+		};
+		8F99DA901D17CDEC00909E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F99DA911D17CDEC00909E0A /* IntentsUI.framework */,
+				A9DF972911402175A1D89759 /* libPods-VKSiri.a */,
+				44D7512573C5964D44BF8D2B /* libPods-VKSiriHelper.a */,
+				BBBDE0B9A94812864275D54F /* libPods-VKSiriIntentsExtension.a */,
+				D3D37F85186ACB3D07DE2BDA /* libPods-VKSiriIntentsExtensionUI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8F0AA3421D17D0C300CF9E38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F42F0E81D19F2CB003B8A30 /* N7VKManager.h in Headers */,
+				8F42F0E61D19F2CB003B8A30 /* N7UserModel.h in Headers */,
+				8F0AA3481D17D0C300CF9E38 /* VKSiriHelper.h in Headers */,
+				8F42F0E41D19F2CB003B8A30 /* N7IntentsHelper.h in Headers */,
+				8F42F0E21D19F2CB003B8A30 /* N7DataStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8F052FBB1D19856000209F8F /* VKSiriIntentsUIExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F052FC91D19856100209F8F /* Build configuration list for PBXNativeTarget "VKSiriIntentsUIExtension" */;
+			buildPhases = (
+				8F052FB81D19856000209F8F /* Sources */,
+				8F052FB91D19856000209F8F /* Frameworks */,
+				8F052FBA1D19856000209F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKSiriIntentsUIExtension;
+			productName = VKSiriIntentsUIExtension;
+			productReference = 8F052FBC1D19856000209F8F /* VKSiriIntentsUIExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8F0AA3441D17D0C300CF9E38 /* VKSiriHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F0AA3501D17D0C300CF9E38 /* Build configuration list for PBXNativeTarget "VKSiriHelper" */;
+			buildPhases = (
+				3A241AA74A87C8B9B1504867 /* 📦 Check Pods Manifest.lock */,
+				8F0AA3401D17D0C300CF9E38 /* Sources */,
+				8F0AA3411D17D0C300CF9E38 /* Frameworks */,
+				8F0AA3421D17D0C300CF9E38 /* Headers */,
+				8F0AA3431D17D0C300CF9E38 /* Resources */,
+				9DDC8D3F2CCF8B28007D4BC1 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKSiriHelper;
+			productName = VKSiriHelper;
+			productReference = 8F0AA3451D17D0C300CF9E38 /* VKSiriHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F99DA661D17CDBE00909E0A /* VKSiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F99DA7E1D17CDBE00909E0A /* Build configuration list for PBXNativeTarget "VKSiri" */;
+			buildPhases = (
+				89D90D35EE012728B1DC7069 /* 📦 Check Pods Manifest.lock */,
+				8F99DA631D17CDBE00909E0A /* Sources */,
+				8F99DA641D17CDBE00909E0A /* Frameworks */,
+				8F99DA651D17CDBE00909E0A /* Resources */,
+				8F99DAA71D17CDEC00909E0A /* Embed App Extensions */,
+				D9079E8367EF29D06F93518A /* 📦 Embed Pods Frameworks */,
+				DBE39B26C08118A5F0EB7DD0 /* 📦 Copy Pods Resources */,
+				8F0AA3511D17D0C300CF9E38 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F99DA9F1D17CDEC00909E0A /* PBXTargetDependency */,
+				8F0AA34B1D17D0C300CF9E38 /* PBXTargetDependency */,
+				8F052FC71D19856000209F8F /* PBXTargetDependency */,
+			);
+			name = VKSiri;
+			productName = VKSiri;
+			productReference = 8F99DA671D17CDBE00909E0A /* VKSiri.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F99DA841D17CDEC00909E0A /* VKSiriIntentsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F99DAA41D17CDEC00909E0A /* Build configuration list for PBXNativeTarget "VKSiriIntentsExtension" */;
+			buildPhases = (
+				A7DDDDCE470C23AD4B88E2E4 /* 📦 Check Pods Manifest.lock */,
+				8F99DA811D17CDEC00909E0A /* Sources */,
+				8F99DA821D17CDEC00909E0A /* Frameworks */,
+				8F99DA831D17CDEC00909E0A /* Resources */,
+				94512086C876A42A2744FA87 /* 📦 Embed Pods Frameworks */,
+				98736B868ACB40C262F60E33 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKSiriIntentsExtension;
+			productName = VKSiriIntentsExtension;
+			productReference = 8F99DA851D17CDEC00909E0A /* VKSiriIntentsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F99DA5F1D17CDBE00909E0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = N7;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = N7;
+				TargetAttributes = {
+					8F052FBB1D19856000209F8F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					8F0AA3441D17D0C300CF9E38 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					8F99DA661D17CDBE00909E0A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+					8F99DA841D17CDEC00909E0A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8F99DA621D17CDBE00909E0A /* Build configuration list for PBXProject "VKSiri" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F99DA5E1D17CDBE00909E0A;
+			productRefGroup = 8F99DA681D17CDBE00909E0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F99DA661D17CDBE00909E0A /* VKSiri */,
+				8F0AA3441D17D0C300CF9E38 /* VKSiriHelper */,
+				8F99DA841D17CDEC00909E0A /* VKSiriIntentsExtension */,
+				8F052FBB1D19856000209F8F /* VKSiriIntentsUIExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F052FBA1D19856000209F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F052FC41D19856000209F8F /* MainInterface.storyboard in Resources */,
+				8F42F0EF1D1A63A9003B8A30 /* vk_logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0AA3431D17D0C300CF9E38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F99DA651D17CDBE00909E0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F99DA7A1D17CDBE00909E0A /* LaunchScreen.storyboard in Resources */,
+				8F99DA771D17CDBE00909E0A /* Assets.xcassets in Resources */,
+				8F99DA751D17CDBE00909E0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F99DA831D17CDEC00909E0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A241AA74A87C8B9B1504867 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89D90D35EE012728B1DC7069 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		94512086C876A42A2744FA87 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKSiriIntentsExtension/Pods-VKSiriIntentsExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98736B868ACB40C262F60E33 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKSiriIntentsExtension/Pods-VKSiriIntentsExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DDC8D3F2CCF8B28007D4BC1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKSiriHelper/Pods-VKSiriHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7DDDDCE470C23AD4B88E2E4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9079E8367EF29D06F93518A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKSiri/Pods-VKSiri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE39B26C08118A5F0EB7DD0 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKSiri/Pods-VKSiri-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F052FB81D19856000209F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F052FD11D1985B600209F8F /* N7IntentHandlingViewController.m in Sources */,
+				8F052FCE1D19859600209F8F /* N7MessageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0AA3401D17D0C300CF9E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F42F0E71D19F2CB003B8A30 /* N7UserModel.m in Sources */,
+				8F42F0E91D19F2CB003B8A30 /* N7VKManager.m in Sources */,
+				8F42F0E51D19F2CB003B8A30 /* N7IntentsHelper.m in Sources */,
+				8F42F0E31D19F2CB003B8A30 /* N7DataStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F99DA631D17CDBE00909E0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F99DA721D17CDBE00909E0A /* ViewController.m in Sources */,
+				8F99DA6F1D17CDBE00909E0A /* AppDelegate.m in Sources */,
+				8F99DA6C1D17CDBE00909E0A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F99DA811D17CDEC00909E0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F83147A1D17FA3C00129E82 /* N7VKSendMessageHandler.m in Sources */,
+				8F83147D1D17FE1C00129E82 /* N7IntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F052FC71D19856000209F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F052FBB1D19856000209F8F /* VKSiriIntentsUIExtension */;
+			targetProxy = 8F052FC61D19856000209F8F /* PBXContainerItemProxy */;
+		};
+		8F0AA34B1D17D0C300CF9E38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F0AA3441D17D0C300CF9E38 /* VKSiriHelper */;
+			targetProxy = 8F0AA34A1D17D0C300CF9E38 /* PBXContainerItemProxy */;
+		};
+		8F99DA9F1D17CDEC00909E0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F99DA841D17CDEC00909E0A /* VKSiriIntentsExtension */;
+			targetProxy = 8F99DA9E1D17CDEC00909E0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F052FC21D19856000209F8F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F052FC31D19856000209F8F /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		8F99DA731D17CDBE00909E0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F99DA741D17CDBE00909E0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F99DA781D17CDBE00909E0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F99DA791D17CDBE00909E0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F052FCA1D19856100209F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VKSiriIntentsUIExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = N7.VKSiri.VKSiriIntentsUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8F052FCB1D19856100209F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VKSiriIntentsUIExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = N7.VKSiri.VKSiriIntentsUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8F0AA34E1D17D0C300CF9E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E77C0AC852504710463E018 /* Pods-VKSiriHelper.debug.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VKSiriHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = N7.VKSiriHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F0AA34F1D17D0C300CF9E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943ADCD41257F1E5132E0724 /* Pods-VKSiriHelper.release.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VKSiriHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = N7.VKSiriHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F99DA7C1D17CDBE00909E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8F99DA7D1D17CDBE00909E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F99DA7F1D17CDBE00909E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B40A239F904B835C7E4F79F /* Pods-VKSiri.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = VKSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = N7.VKSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F99DA801D17CDBE00909E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C4F0F29DC5B2B9A5702D95 /* Pods-VKSiri.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = VKSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = N7.VKSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8F99DAA51D17CDEC00909E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42997A43F2B8D1D72DFE8B1C /* Pods-VKSiriIntentsExtension.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = VKSiriIntentsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = N7.VKSiri.VKSiriIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8F99DAA61D17CDEC00909E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6CC0B9017280AAC4749154 /* Pods-VKSiriIntentsExtension.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = VKSiriIntentsExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = N7.VKSiri.VKSiriIntentsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F052FC91D19856100209F8F /* Build configuration list for PBXNativeTarget "VKSiriIntentsUIExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F052FCA1D19856100209F8F /* Debug */,
+				8F052FCB1D19856100209F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F0AA3501D17D0C300CF9E38 /* Build configuration list for PBXNativeTarget "VKSiriHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F0AA34E1D17D0C300CF9E38 /* Debug */,
+				8F0AA34F1D17D0C300CF9E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F99DA621D17CDBE00909E0A /* Build configuration list for PBXProject "VKSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F99DA7C1D17CDBE00909E0A /* Debug */,
+				8F99DA7D1D17CDBE00909E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F99DA7E1D17CDBE00909E0A /* Build configuration list for PBXNativeTarget "VKSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F99DA7F1D17CDBE00909E0A /* Debug */,
+				8F99DA801D17CDBE00909E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F99DAA41D17CDEC00909E0A /* Build configuration list for PBXNativeTarget "VKSiriIntentsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F99DAA51D17CDEC00909E0A /* Debug */,
+				8F99DAA61D17CDEC00909E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F99DA5F1D17CDBE00909E0A /* Project object */;
+}
