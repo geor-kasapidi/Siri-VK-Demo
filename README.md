@@ -1,5 +1,9 @@
 # Siri-VK-Demo
 
+### Instruction
+
+Say to Siri: "Отправь сообщение <Имя (Фамилия) пользователя>" через Орион <Ваше сообщение>"
+
 ### Requirements
 
 1) Xcode 8
